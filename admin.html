@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Espace propriétaire — La Baie du Dragon</title>
+  <meta name="robots" content="noindex, nofollow" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header" id="top">
+    <div class="container header-content">
+      <a href="index.html" class="brand">
+        <span class="brand-mark">BD</span>
+        <span>
+          <span class="brand-text">La Baie du Dragon</span>
+          <span class="brand-sub">Espace propriétaire</span>
+        </span>
+      </a>
+      <nav class="site-nav">
+        <a href="index.html">Retour au site</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <div class="card form-card reveal">
+          <p class="eyebrow">Connexion</p>
+          <h1 style="font-size:1.8rem;">Espace propriétaire</h1>
+          <p style="color:var(--color-muted);">Connecte-toi pour modifier les informations du site (téléphone, adresse, horaires, carte...).</p>
+
+          <form id="login-form">
+            <div class="form-group">
+              <label for="login-password">Mot de passe</label>
+              <input type="password" id="login-password" name="password" required autocomplete="current-password" />
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Se connecter</button>
+            <p id="login-error" class="form-error"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

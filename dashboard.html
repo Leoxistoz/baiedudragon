@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tableau de bord — La Baie du Dragon</title>
+  <meta name="robots" content="noindex, nofollow" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body id="dashboard-root">
+  <header class="site-header" id="top">
+    <div class="container header-content">
+      <a href="index.html" class="brand">
+        <span class="brand-mark">BD</span>
+        <span>
+          <span class="brand-text">La Baie du Dragon</span>
+          <span class="brand-sub">Tableau de bord</span>
+        </span>
+      </a>
+      <nav class="site-nav">
+        <a href="index.html" target="_blank" rel="noopener">Voir le site</a>
+        <a href="#" id="logout-btn" class="nav-cta">Déconnexion</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <div class="dash-toolbar reveal">
+          <div>
+            <p class="eyebrow">Espace propriétaire</p>
+            <h1 style="font-size:2rem; margin-bottom:0;">Modifier le site</h1>
+          </div>
+          <span id="save-message" class="saving-indicator"></span>
+        </div>
+
+        <form id="dashboard-form">
+
+          <div class="dash-section card reveal">
+            <h2>Informations générales</h2>
+            <div class="form-group">
+              <label for="f-nom">Nom du restaurant</label>
+              <input type="text" id="f-nom" />
+            </div>
+            <div class="form-group">
+              <label for="f-tagline">Accroche (sous le titre)</label>
+              <input type="text" id="f-tagline" />
+            </div>
+            <div class="form-group">
+              <label for="f-description">Description</label>
+              <textarea id="f-description"></textarea>
+            </div>
+            <div class="form-group">
+              <label for="f-highlights">Points forts (un par ligne)</label>
+              <textarea id="f-highlights" style="min-height:140px;"></textarea>
+            </div>
+          </div>
+
+          <div class="dash-section card reveal">
+            <h2>Contact &amp; adresse</h2>
+            <div class="dash-grid-2">
+              <div class="form-group">
+                <label for="f-telephone">Téléphone (format +33...)</label>
+                <input type="text" id="f-telephone" placeholder="+33491927478" />
+              </div>
+              <div class="form-group">
+                <label for="f-telephone-affiche">Téléphone affiché</label>
+                <input type="text" id="f-telephone-affiche" placeholder="04 91 92 74 78" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="f-adresse">Adresse</label>
+              <input type="text" id="f-adresse" />
+            </div>
+            <div class="dash-grid-2">
+              <div class="form-group">
+                <label for="f-code-postal">Code postal</label>
+                <input type="text" id="f-code-postal" />
+              </div>
+              <div class="form-group">
+                <label for="f-ville">Ville</label>
+                <input type="text" id="f-ville" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="f-maps-url">Lien Google Maps</label>
+              <input type="text" id="f-maps-url" />
+            </div>
+            <div class="dash-grid-2">
+              <div class="form-group">
+                <label for="f-instagram">Instagram (lien, optionnel)</label>
+                <input type="text" id="f-instagram" />
+              </div>
+              <div class="form-group">
+                <label for="f-facebook">Facebook (lien, optionnel)</label>
+                <input type="text" id="f-facebook" />
+              </div>
+            </div>
+          </div>
+
+          <div class="dash-section card reveal">
+            <h2>Horaires</h2>
+            <div class="form-group"><label for="f-horaire-lundi">Lundi</label><input type="text" id="f-horaire-lundi" /></div>
+            <div class="form-group"><label for="f-horaire-mardi">Mardi</label><input type="text" id="f-horaire-mardi" /></div>
+            <div class="form-group"><label for="f-horaire-mercredi">Mercredi</label><input type="text" id="f-horaire-mercredi" /></div>
+            <div class="form-group"><label for="f-horaire-jeudi">Jeudi</label><input type="text" id="f-horaire-jeudi" /></div>
+            <div class="form-group"><label for="f-horaire-vendredi">Vendredi</label><input type="text" id="f-horaire-vendredi" /></div>
+            <div class="form-group"><label for="f-horaire-samedi">Samedi</label><input type="text" id="f-horaire-samedi" /></div>
+            <div class="form-group"><label for="f-horaire-dimanche">Dimanche</label><input type="text" id="f-horaire-dimanche" /></div>
+          </div>
+
+          <div class="dash-section card reveal">
+            <h2>Carte / menu</h2>
+            <div class="form-group">
+              <label for="f-menu-note">Note affichée en haut de la carte</label>
+              <textarea id="f-menu-note"></textarea>
+            </div>
+
+            <div id="menu-editor"><!-- rempli par script.js --></div>
+
+            <button type="button" id="add-category" class="btn btn-secondary">+ Ajouter une catégorie</button>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Enregistrer les modifications</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
