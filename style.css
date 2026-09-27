@@ -344,3 +344,8 @@ strong { color: var(--ink); }
   .footer-grid { grid-template-columns: 1fr; }
   .footer-bottom { flex-direction: column; }
 }
+
+/* Évite l'affichage des anciennes données avant chargement admin */
+body.content-loading [data-field] {
+    visibility: hidden;
+}
