@@ -11,130 +11,136 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body data-page-accueil>
+
+  <div class="announce-bar">Réservation conseillée — <strong data-field="telephone_affiche">04 91 92 74 78</strong></div>
+
   <header class="site-header" id="top">
     <div class="container header-content">
+      <div class="header-side left">
+        <nav class="site-nav" aria-label="Navigation principale">
+          <a href="index.html">Accueil</a>
+          <a href="carte.html">Carte</a>
+        </nav>
+      </div>
+
       <a href="index.html" class="brand" aria-label="Retour à l'accueil">
-        <span class="brand-mark">BD</span>
-        <span>
-          <span class="brand-text" data-field="nom">La Baie du Dragon</span>
-          <span class="brand-sub">Marseille</span>
-        </span>
+        <span class="brand-wordmark" data-field="nom">La Baie du Dragon</span>
+        <span class="brand-script">Marseille</span>
       </a>
 
-      <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
-
-      <nav class="site-nav" aria-label="Navigation principale">
-        <a href="index.html">Accueil</a>
-        <a href="carte.html">Carte</a>
-        <a href="tel:+33491927478" class="nav-cta" data-field="telephone_href">Réserver</a>
-      </nav>
+      <div class="header-side right">
+        <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <a href="tel:+33491927478" class="btn btn-sm nav-cta" data-field="telephone_href">Réserver</a>
+      </div>
     </div>
   </header>
 
   <main>
-    <section class="hero section">
-      <div class="container hero-grid">
-        <div class="reveal">
-          <p class="eyebrow">Notre Dame du Mont · 6ᵉ arrondissement</p>
-          <h1 data-field="tagline">Spécialités d'Asie du Sud-Est, dont une carte 100% vegan</h1>
-          <p class="hero-subtitle" data-field="description">
-            La Baie du Dragon propose des spécialités de l'Asie du Sud-Est, dont une carte vegan
-            complète et variée. Les gourmands non-végétariens ne sont pas en reste : ils trouveront
-            eux aussi de quoi se régaler. Une cuisine soignée, une ambiance chaleureuse, et un patron
-            reconnu pour son accueil convivial et son humour.
-          </p>
-
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="tel:+33491927478" data-field="telephone_href">Appeler pour réserver</a>
-            <a class="btn btn-secondary" href="carte.html">Voir la carte</a>
-          </div>
-
-          <div class="hero-note">
-            <span>📍 <span data-field="adresse">8 Place Notre Dame du Mont, 13006 Marseille</span></span>
-            <span>⭐ Note Google 4.8/5</span>
-            <span>🌱 Carte vegan complète</span>
-          </div>
-        </div>
-
-        <div class="card hero-card reveal">
-          <div class="badge">Nos points forts</div>
-          <ul data-field="highlights">
-            <li>Carte vegan complète et variée, en plus de la carte traditionnelle</li>
-            <li>Note Google très élevée (4.8/5)</li>
-            <li>Spécialités : soupes (pho), curry vert, curry saïgonnais, rouleaux de printemps</li>
-            <li>Desserts maison notables (tiramisu au spéculoos)</li>
-            <li>Cocktail maison apprécié</li>
-            <li>Ambiance chaleureuse, accueil convivial</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-soft">
-      <div class="container">
-        <div class="section-heading reveal">
-          <p class="eyebrow">Infos pratiques</p>
-          <h2>Horaires &amp; contact</h2>
-        </div>
-
-        <div class="grid-3">
-          <div class="info-card reveal">
-            <h3>Horaires</h3>
-            <table class="hours-table">
-              <tbody data-field="horaires">
-                <tr><td>Lundi</td><td>Fermé</td></tr>
-                <tr><td>Mardi</td><td>12h00–14h00 / 19h00–22h30</td></tr>
-                <tr><td>Mercredi</td><td>12h00–14h00 / 19h00–22h30</td></tr>
-                <tr><td>Jeudi</td><td>12h00–14h00 / 19h00–22h30</td></tr>
-                <tr><td>Vendredi</td><td>12h00–14h00 / 19h00–22h30</td></tr>
-                <tr><td>Samedi</td><td>12h00–14h00 / 19h00–22h30</td></tr>
-                <tr><td>Dimanche</td><td>Fermé</td></tr>
-              </tbody>
-            </table>
-          </div>
-
-          <div class="info-card reveal">
-            <h3>Adresse</h3>
-            <p data-field="adresse">8 Place Notre Dame du Mont, 13006 Marseille</p>
-            <a class="btn btn-secondary" href="https://www.google.com/maps/search/?api=1&query=8+Place+Notre+Dame+du+Mont+13006+Marseille" data-field="maps_href" target="_blank" rel="noopener">
-              Itinéraire
-            </a>
-          </div>
-
-          <div class="info-card reveal">
-            <h3>Téléphone</h3>
-            <p><a href="tel:+33491927478" data-field="telephone_href"><span data-field="telephone_affiche">04 91 92 74 78</span></a></p>
-            <p style="margin-bottom:0; color:var(--color-muted); font-size:0.9rem;">Réservation conseillée</p>
-          </div>
+    <section class="hero-media" data-field="hero_media">
+      <div class="media-placeholder">🐉 Photo ou vidéo du restaurant à ajouter depuis l'espace propriétaire</div>
+      <div class="hero-overlay">
+        <p class="eyebrow">Notre Dame du Mont · 6ᵉ arrondissement</p>
+        <h1 data-field="tagline">Spécialités d'Asie du Sud-Est, dont une carte 100% vegan</h1>
+        <p data-field="description">
+          La Baie du Dragon propose des spécialités de l'Asie du Sud-Est, dont une carte vegan
+          complète et variée, dans une ambiance chaleureuse et un accueil convivial.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-rose" href="tel:+33491927478" data-field="telephone_href">Appeler pour réserver</a>
+          <a class="btn" href="carte.html">Voir la carte</a>
         </div>
       </div>
     </section>
 
     <section class="section">
       <div class="container">
-        <div class="section-heading reveal">
-          <p class="eyebrow">Avis clients</p>
+        <div class="section-heading center">
+          <span class="eyebrow">Nos points forts</span>
+          <h2>Une adresse qui séduit Marseille</h2>
+        </div>
+        <div class="product-grid" data-field="highlights">
+          <div class="product-card reveal">
+            <div class="product-media"><div class="media-placeholder">Photo à ajouter</div></div>
+            <h3 class="product-title">Carte vegan complète</h3>
+            <p>Une carte 100% végétale aussi riche que la carte traditionnelle.</p>
+          </div>
+          <div class="product-card reveal">
+            <div class="product-media"><div class="media-placeholder">Photo à ajouter</div></div>
+            <h3 class="product-title">Note Google 4.8/5</h3>
+            <p>Plus de 500 avis très positifs sur la qualité et l'accueil.</p>
+          </div>
+          <div class="product-card reveal">
+            <div class="product-media"><div class="media-placeholder">Photo à ajouter</div></div>
+            <h3 class="product-title">Spécialités signature</h3>
+            <p>Pho, curry vert, curry saïgonnais, rouleaux de printemps.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-tight" data-field="galerie-section" style="display:none;">
+      <div class="container">
+        <div class="section-heading center">
+          <span class="eyebrow">En images</span>
+          <h2>La maison</h2>
+        </div>
+        <div class="gallery-grid" data-field="galerie"></div>
+      </div>
+    </section>
+
+    <section class="info-strip section">
+      <div class="container grid-3">
+        <div class="reveal">
+          <h3>Horaires</h3>
+          <table class="hours-table">
+            <tbody data-field="horaires">
+              <tr><td>Lundi</td><td>Fermé</td></tr>
+              <tr><td>Mardi</td><td>12h–14h / 19h–22h30</td></tr>
+              <tr><td>Mercredi</td><td>12h–14h / 19h–22h30</td></tr>
+              <tr><td>Jeudi</td><td>12h–14h / 19h–22h30</td></tr>
+              <tr><td>Vendredi</td><td>12h–14h / 19h–22h30</td></tr>
+              <tr><td>Samedi</td><td>12h–14h / 19h–22h30</td></tr>
+              <tr><td>Dimanche</td><td>Fermé</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="reveal">
+          <h3>Adresse</h3>
+          <p data-field="adresse">8 Place Notre Dame du Mont, 13006 Marseille</p>
+          <a class="btn btn-sm" style="border-color:var(--ivory); color:var(--ivory);" href="#" data-field="maps_href" target="_blank" rel="noopener">Itinéraire</a>
+        </div>
+        <div class="reveal">
+          <h3>Téléphone</h3>
+          <p><a href="tel:+33491927478" data-field="telephone_href"><span data-field="telephone_affiche">04 91 92 74 78</span></a></p>
+          <p style="margin-bottom:0;">Réservation conseillée</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-heading center">
+          <span class="eyebrow">Avis clients</span>
           <h2>Ce qu'en disent nos clients</h2>
         </div>
-
         <div class="reviews-grid">
           <div class="review-card reveal">
             <div class="review-stars">★★★★★</div>
-            <p style="margin-bottom:0;">Un accueil chaleureux même tard le soir, avec de nombreuses options vegan bien réalisées — la soupe thaï est particulièrement appréciée.</p>
+            <p>Un accueil chaleureux même tard le soir, avec de nombreuses options vegan bien réalisées — la soupe thaï est particulièrement appréciée.</p>
           </div>
           <div class="review-card reveal">
             <div class="review-stars">★★★★★</div>
-            <p style="margin-bottom:0;">Une adresse incontournable pour les vegans à Marseille, avec un curry vert doux et parfumé très recommandé.</p>
+            <p>Une adresse incontournable pour les vegans à Marseille, avec un curry vert doux et parfumé très recommandé.</p>
           </div>
           <div class="review-card reveal">
             <div class="review-stars">★★★★★</div>
-            <p style="margin-bottom:0;">Une cuisine généreuse et savoureuse, un service souriant, et un dessert au spéculoos qui fait l'unanimité.</p>
+            <p>Une cuisine généreuse et savoureuse, un service souriant, et un dessert au spéculoos qui fait l'unanimité.</p>
           </div>
           <div class="review-card reveal">
             <div class="review-stars">★★★★★</div>
-            <p style="margin-bottom:0;">Un large choix pour les végétariens et les vegans, avec un patron toujours de bonne humeur.</p>
+            <p>Un large choix pour les végétariens et les vegans, avec un patron toujours de bonne humeur.</p>
           </div>
         </div>
       </div>
@@ -144,13 +150,9 @@
   <footer class="site-footer">
     <div class="container footer-grid">
       <div>
-        <a href="index.html" class="brand footer-brand">
-          <span class="brand-mark">BD</span>
-          <span class="brand-text">La Baie du Dragon</span>
-        </a>
+        <span class="footer-brand">La Baie du Dragon</span>
         <p>Spécialités d'Asie du Sud-Est et carte 100% vegan, au cœur du 6ᵉ arrondissement de Marseille.</p>
       </div>
-
       <div>
         <h3>Navigation</h3>
         <ul>
@@ -159,7 +161,6 @@
           <li><a href="admin.html">Espace propriétaire</a></li>
         </ul>
       </div>
-
       <div>
         <h3>Informations</h3>
         <ul>
@@ -169,7 +170,6 @@
         </ul>
       </div>
     </div>
-
     <div class="container footer-bottom">
       <p>© <span data-year>2026</span> La Baie du Dragon — Marseille.</p>
       <p>Site réalisé par FRANCOIS DIGITAL.</p>

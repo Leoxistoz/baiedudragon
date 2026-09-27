@@ -5,6 +5,13 @@
 [functions]
   node_bundler = "esbuild"
 
+# IMPORTANT : on désactive tout post-traitement HTML.
+# "Pretty URLs" réécrit les liens internes (carte.html -> /carte) en chemins
+# ABSOLUS à la racine du site, ce qui casse le proxy francois-digital.fr/exemples/labaiedudragon/
+# (le lien pointe alors vers francois-digital.fr/carte au lieu de .../labaiedudragon/carte.html).
+[build.processing]
+  skip_processing = true
+
 [[edge_functions]]
   path = "/dashboard.html"
   function = "protect-dashboard"

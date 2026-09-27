@@ -33,95 +33,102 @@ export const DEFAULT_CONTENT = {
     facebook: ""
   },
   highlights: [
-    "Carte vegan complète et variée, en plus de la carte traditionnelle",
-    "Note Google très élevée (4.8/5)",
-    "Spécialités : soupes (pho), curry vert, curry saïgonnais, rouleaux de printemps",
-    "Desserts maison notables (tiramisu au spéculoos)",
-    "Cocktail maison apprécié",
-    "Ambiance chaleureuse, accueil convivial"
+    { titre: "Carte vegan complète", texte: "Une carte 100% végétale aussi riche que la carte traditionnelle.", image: "" },
+    { titre: "Note Google 4.8/5", texte: "Plus de 500 avis très positifs sur la qualité et l'accueil.", image: "" },
+    { titre: "Spécialités signature", texte: "Pho, curry vert, curry saïgonnais, rouleaux de printemps.", image: "" }
   ],
+  media: {
+    hero_image: "",
+    hero_video: "",
+    galerie: []
+  },
   carte: {
     note:
-      "Carte d'exemple, à ajuster : les plats, descriptions et prix ci-dessous sont indicatifs et peuvent être modifiés à tout moment depuis l'espace propriétaire.",
+      "Carte d'exemple, à ajuster : les catégories, plats, photos et prix ci-dessous sont indicatifs et peuvent être modifiés à tout moment depuis l'espace propriétaire.",
     categories: [
       {
         nom: "Entrées",
-        plats: [
+        image: "",
+        sous_categories: [
           {
-            nom: "Rouleaux de printemps",
-            description: "Rouleaux frais, légumes et vermicelles, sauce maison",
-            prix: "7,50 €"
-          },
-          {
-            nom: "Nems au choix",
-            description: "Nems croustillants, poulet ou légumes (vegan)",
-            prix: "7,00 €"
+            nom: "",
+            plats: [
+              { nom: "Rouleaux de printemps", description: "Rouleaux frais, légumes et vermicelles, sauce maison", prix: "7,50 €", image: "" },
+              { nom: "Nems au choix", description: "Nems croustillants, poulet ou légumes (vegan)", prix: "7,00 €", image: "" }
+            ]
           }
         ]
       },
       {
         nom: "Soupes",
-        plats: [
+        image: "",
+        sous_categories: [
           {
-            nom: "Pho",
-            description: "Soupe vietnamienne, bouillon parfumé (le riz est servi à part)",
-            prix: "12,50 €"
+            nom: "",
+            plats: [
+              { nom: "Pho", description: "Soupe vietnamienne, bouillon parfumé (le riz est servi à part)", prix: "12,50 €", image: "" }
+            ]
           }
         ]
       },
       {
         nom: "Curry & Plats",
-        plats: [
+        image: "",
+        sous_categories: [
           {
-            nom: "Curry vert",
-            description: "Curry doux et parfumé, légumes de saison",
-            prix: "13,50 €"
-          },
-          {
-            nom: "Curry saïgonnais",
-            description: "Curry relevé, plus prononcé en goût",
-            prix: "13,50 €"
+            nom: "",
+            plats: [
+              { nom: "Curry vert", description: "Curry doux et parfumé, légumes de saison", prix: "13,50 €", image: "" },
+              { nom: "Curry saïgonnais", description: "Curry relevé, plus prononcé en goût", prix: "13,50 €", image: "" }
+            ]
           }
         ]
       },
       {
         nom: "Carte Vegan",
-        plats: [
+        image: "",
+        sous_categories: [
           {
-            nom: "Nouilles sautées vegan",
-            description: "Nouilles, légumes et protéines végétales",
-            prix: "12,50 €"
+            nom: "Plats",
+            plats: [
+              { nom: "Nouilles sautées vegan", description: "Nouilles, légumes et protéines végétales", prix: "12,50 €", image: "" },
+              { nom: "Pho vegan", description: "Version 100% végétale du pho traditionnel", prix: "12,50 €", image: "" }
+            ]
           },
           {
-            nom: "Pho vegan",
-            description: "Version 100% végétale du pho traditionnel",
-            prix: "12,50 €"
+            nom: "Desserts vegan",
+            plats: [
+              { nom: "Riz gluant à la mangue", description: "Dessert vegan traditionnel", prix: "6,50 €", image: "" }
+            ]
           }
         ]
       },
       {
         nom: "Desserts",
-        plats: [
+        image: "",
+        sous_categories: [
           {
-            nom: "Tiramisu au spéculoos",
-            description: "Dessert maison, spécialité de la maison",
-            prix: "6,50 €"
+            nom: "",
+            plats: [
+              { nom: "Tiramisu au spéculoos", description: "Dessert maison, spécialité de la maison", prix: "6,50 €", image: "" }
+            ]
           }
         ]
       },
       {
         nom: "Boissons",
-        plats: [
+        image: "",
+        sous_categories: [
           {
-            nom: "Cocktail maison",
-            description: "La spécialité en boisson de la maison",
-            prix: "8,00 €"
+            nom: "",
+            plats: [
+              { nom: "Cocktail maison", description: "La spécialité en boisson de la maison", prix: "8,00 €", image: "" }
+            ]
           }
         ]
       }
     ]
-  },
-  photos: []
+  }
 };
 
 export default async () => {
