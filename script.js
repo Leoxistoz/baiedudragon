@@ -86,14 +86,16 @@ function initPublicContent() {
   if (!hasAccueil && !hasCarte) return;
 
   fetchContent()
-    .then(function (content) {
-      if (!content) return;
-      if (hasAccueil) renderAccueil(content);
-      if (hasCarte) renderCarte(content);
-    })
+  .then(function (content) {
+    if (!content) return;
+    if (hasAccueil) renderAccueil(content);
+    if (hasCarte) renderCarte(content);
+
+    document.body.classList.remove("content-loading");
+  })
     .catch(function () {
-      // En cas d'erreur réseau, le contenu par défaut déjà présent dans le HTML reste affiché.
-    });
+        document.body.classList.remove("content-loading");
+     });
 }
 
 function fetchContent() {
